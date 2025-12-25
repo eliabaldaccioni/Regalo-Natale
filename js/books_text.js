@@ -1,11 +1,10 @@
-const BOOKS_TEXT = `
-La danza della realtà
+const BOOKS_TEXT = `LA DANZA DELLA REALTÀ 
 Alejandro Jodorowsky
 Biografia\n
-Il codice da vinci
+IL CODICE DA VINCI
 Dan Brown
 Avventura\n
-Carrie
+CARRIE
 Sthephen King
 Horror
 `;

@@ -1,23 +1,22 @@
-const MOVIES_TEXT = `
-Love Death and Robots
+const MOVIES_TEXT = `LOVE DEATH AND ROBOTS
 Serie antologica - Cortometraggio\n
-Arcane
+ARCANE
 Animazione - Steampunk\n
-Black Mirror
+BLACK MIRROR
 Serie antologica - Fantascienza\n
-Dark
+DARK
 Thriller - Fantascienza\n
-Man VS Bee
+MAN VS BEE
 Cortometraggio - Commedia\n
-Una notte violenta e silenziosa
+UNA NOTTE VIOLENTA E SILENZIOSA
 Azione - Commedia - Natalizio\n
-Scary Movie
+SCARY MOVIE
 Horror - Commedia - Parodia\n
-Borat
+BORAT
 Commedia - Mockumentary\n
-The Prestige
+THE PRESTIGE
 Drammatico - Fantascienza\n
-Il Buco
+IL BUCO
 Horror - Psicologico
 `;
 

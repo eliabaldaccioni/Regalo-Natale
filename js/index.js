@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const audio = document.getElementById("index_music");
     audio.volume = 0.1;
 
+    const account_button = document.getElementById('account_button');
+
     const info_modal = document.getElementById('info_modal');
     const info_button = document.getElementById('info_button');
     const info_text = document.getElementById('info_text');
@@ -24,6 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const forum_movies_button = document.getElementById('forum_movies_button');
     const forum_books_button = document.getElementById('forum_books_button');
     const forum_recipes_button = document.getElementById('forum_recipes_button');
+
+    /*https://eliabaldaccioni.github.io/Regalo-Natale/?id=5*/
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+    account_button.style.backgroundImage = `url('./assets/icons/account_${id}_icon.png')`;
 
     audio_button.addEventListener('click', (event) => {
         toggleButtonImage(event.currentTarget,'./assets/icons/unmute_icon.png','./assets/icons/mute_icon.png');
@@ -65,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     forum_recipes_button.addEventListener('click', () => {
-        updateForumUI(forum_recipes_button,[forum_books_button,forum_movies_button],"RECIPES",INFO_TEXT)
+        updateForumUI(forum_recipes_button,[forum_books_button,forum_movies_button],"RECIPES",RECIPES_TEXT)
     });
 
     function updateForumUI(button,buttons,title,text){
