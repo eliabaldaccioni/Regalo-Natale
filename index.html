@@ -3,37 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
   <title>Regalo</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎁</text></svg>">
   <link rel="stylesheet" href="./css/index.css">
+  <script src="./js/movies_text.js"></script>
+  <script src="./js/books_text.js"></script>
+  <script src="./js/recipes_text.js"></script>
+  <script src="./js/info_text.js"></script>
   <script src="./js/index.js"></script>
 </head>
 <body>
-    <video class="background" autoplay muted loop playsinline>
+    <video id="index_background" autoplay muted loop playsinline>
         <source src="./assets/video/background.mp4" type="video/mp4">
     </video>
-    <audio id="music" loop>
+    <audio id="index_music" loop>
         <source src="./assets/audio/christmas.mp3">
     </audio>
 
-    <div class="header">
-        <button class="accountIcon"></button>
+    <div class="index_header">
+        <button id="account_button"></button>
+        <button id="audio_button"></button>
     </div>
-    <div class="main">
-        <button class="infoIcon"></button>
-        <button class="forumIcon"></button> 
+    <div class="index_main">
+        <button id="info_button"></button>
+        <button id="forum_button"></button> 
         
     </div>
-    <div class="footer">
+    <div class="index_footer">
         
     </div>              
 
-    <!-- Due bottoni a destra 
-    <div class="right-buttons">
-        <button class="btn">Apri 🎁</button>
-        <button class="btn">Continua ➜</button>
+    <div id="info_modal" class="modal">
+        <!--
+        <div class="navigation_buttons">
+            <button id="previous_button"></button>
+            <button id="next_button"></button>
+        </div>
+        -->
+        <div class="info_background">
+            <div class="info_header">
+                <h2 id="info_title">POSTA</h2>
+                <button id="info_close_button"></button>
+            </div>
+            <div class="info_main">
+                <p id="info_text"></p>
+            </div>
+        </div>
     </div>
-    -->
+
+    <div id="forum_modal" class="modal">
+        <div class="forum_background">
+            <div class="forum_header">
+                <h2 id="forum_title">POSTA</h2>
+                <button id="forum_close_button"></button>
+            </div>
+            <div class="forum_main">
+                <div class="forum_text">
+                    <p id="forum_text"></p>
+                </div>
+                <div class="forum_buttons">
+                    <button id="forum_movies_button"></button>
+                    <button id="forum_books_button"></button>
+                    <button id="forum_recipes_button"></button>
+                </div>
+            </div>
+        </div>
+    </div>
   
 
 </body>
