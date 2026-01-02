@@ -18,6 +18,10 @@ THE PRESTIGE
 Drammatico - Fantascienza\n
 IL BUCO
 Horror - Psicologico
+Se mi lasci ti cancello
+Romantico - Commedia\n
+Clerks
+Commedia - Bianco e nero\n
 `;
 
 
